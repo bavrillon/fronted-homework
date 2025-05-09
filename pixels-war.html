@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixels-War</title>
+    <link rel="stylesheet" href="pixels-war.css" />
+    <script src="./pixels-war.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h4>PLAYING FIELD :</h4>
+        <input
+          type="text"
+          name="adresse"
+          id="adresse"
+          value="https://pixels-war.oie-lab.net"
+        />
+        <input type="text" name="map" id="map" value="0000" />
+        <button id="load-button">Load the map</button>
+      </div>
+      <div id="countdown">
+        Time to wait before the next pixel change: <span id="timer">5</span>s
+        <div id="visual"></div>
+      </div>
+      <div class="map" id="map-container"></div>
+      <div class="footer">
+        <h5>Set the following color :</h5>
+        <input type="color" name="couleur" id="couleur" value="#FF0000"
+      </div>
+    </div>
+  </body>
+</html>

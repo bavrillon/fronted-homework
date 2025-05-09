@@ -1,0 +1,134 @@
+html, body {
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffcc, #ffcc00);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #2a2a3d;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
+}
+
+.header h4 {
+  font-size: 18px;
+  font-style: italic;
+  color: #ffffff; 
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #4CAF50;
+}
+
+.header input {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3c3c4f;
+  color: #4CAF50;
+  width: 240px;
+  outline: none;
+}
+
+.header button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #2f6715;
+}
+
+#countdown {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  border-radius: 8px; 
+  font-family: sans-serif;
+  width: fit-content;
+  display: none; 
+}
+
+#visual {
+  font-size: 3rem; 
+  letter-spacing: 0.4rem; 
+  color: red; 
+  font-family: monospace;
+}
+
+.map {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c2b;
+  border: 2px solid #555;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.pixel {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #333;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+
+.pixel:hover {
+  transform: scale(1.2);
+  border-color: #888;
+}
+
+.footer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer h5 {
+  font-size: 1em;
+  background: linear-gradient(to right, red, green, orange, purple, cyan, pink);
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.footer input {
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
