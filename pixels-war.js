@@ -109,13 +109,14 @@ function startCountdown(ms) {
     timer.textContent = seconds;
     visual.textContent = '-'.repeat(seconds);
 
-    setInterval(() => {
+    const intervalId = setInterval(() => {
         seconds--;
         timer.textContent = seconds;
         visual.textContent = '-'.repeat(seconds);
 
         if (seconds <= 0) {
             countdown.style.display = 'none'; // Cacher le compte à rebours quand terminé
+            clearInterval(intervalId);
         }
     }, 1000);
 }
