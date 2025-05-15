@@ -115,12 +115,14 @@ body {
 
 .footer h5 {
   font-size: 1em;
+  font-family: 'Pacifico', cursive;
   background: linear-gradient(to right, red, green, orange, purple, cyan, pink);
   background-size: 100% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   display: inline-block;
+  
 }
 
 .footer input {
